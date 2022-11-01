@@ -9,24 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Milestones</title>
+    <title>Sales - New transaction</title>
 
-    <!-- Custom fonts for this template -->
+    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
-   
     
-
 </head>
 
 <body id="page-top">
@@ -55,9 +50,9 @@
                     <span>Dashboard</span></a>
             </li>
 
+
             <!-- Divider -->
             <hr class="sidebar-divider">
-
 
             <!-- Heading -->
             <div class="sidebar-heading">
@@ -65,81 +60,81 @@
             </div>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#milestonePages"
                     aria-expanded="true" aria-controls="milestonePages">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Milestones</span>
                 </a>
-                <div id="milestonePages" class="collapse show" aria-labelledby="headingMilestones" data-parent="#accordionSidebar">
+                <div id="milestonePages" class="collapse" aria-labelledby="headingMilestones" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item active" href="milestones.html">All</a>
+                        <a class="collapse-item " href="milestones.html">All</a>
                         <a class="collapse-item" href="new-milestone.html">Add new</a>                       
                     </div>
                 </div>
             </li>
-           <!-- Divider -->
-           <hr class="sidebar-divider d-none d-md-block">
-           <!-- Heading -->
-           <div class="sidebar-heading">
-               Goals
-           </div>
-           <!-- Nav Item - Tables -->
-           <li class="nav-item">
-               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#newGoalPage"
-                   aria-expanded="true" aria-controls="newGoalPage">
-                   <i class="fas fa-fw fa-table"></i>
-                   <span>Goals</span>
-               </a>
-               <div id="newGoalPage" class="collapse" aria-labelledby="headingGoalsPage" data-parent="#accordionSidebar">
-                   <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="goals.html">All</a>
-                    <a class="collapse-item " href="new-goal.html">Add new</a>
-                   </div>
-               </div>
-           </li>
+             <!-- Divider -->
+             <hr class="sidebar-divider d-none d-md-block">
+             <!-- Heading -->
+             <div class="sidebar-heading">
+                 Goals
+             </div>
+             <!-- Nav Item - Tables -->
+             <li class="nav-item">
+                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#newGoalPage"
+                     aria-expanded="true" aria-controls="newGoalPage">
+                     <i class="fas fa-fw fa-table"></i>
+                     <span>Goals</span>
+                 </a>
+                 <div id="newGoalPage" class="collapse" aria-labelledby="headingGoalsPage" data-parent="#accordionSidebar">
+                     <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="goals.html">All</a>
+                         <a class="collapse-item" href="new-goal.html">Add new</a>
+                     </div>
+                 </div>
+             </li>
 
-            <!-- Divider -->
- <hr class="sidebar-divider">
+              <!-- Divider -->
+            <hr class="sidebar-divider">
 
 
- <!-- Heading -->
- <div class="sidebar-heading">
-     Transactions
- </div>
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Transactions
+            </div>
 
- <!-- Nav Item - Tables -->
- <li class="nav-item">
-     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#transactionsPages"
-         aria-expanded="true" aria-controls="transactionsPages">
-         <i class="fas fa-fw fa-table"></i>
-         <span>Transactions</span>
-     </a>
-     <div id="transactionsPages" class="collapse" aria-labelledby="headingTransactions" data-parent="#accordionSidebar">
-         <div class="bg-white py-2 collapse-inner rounded">
-             <a class="collapse-item" href="transactions.html">All</a>
-             <a class="collapse-item" href="new-transaction.html">Add new</a>                       
-         </div>
-     </div>
- </li>
+            <!-- Nav Item - Tables -->
+            <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#transactionsPages"
+                    aria-expanded="true" aria-controls="transactionsPages">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Transactions</span>
+                </a>
+                <div id="transactionsPages" class="collapse" aria-labelledby="headingTransactions" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="transactions.html">All</a>
+                        <a class="collapse-item" href="new-transaction.html">Add new</a>                       
+                    </div>
+                </div>
+            </li>
 
- 
+            
  <!-- Heading -->
  <div class="sidebar-heading">
     Products
 </div>
 
 <!-- Nav Item - Tables -->
-<li class="nav-item">
+<li class="nav-item active">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#productsPages"
         aria-expanded="true" aria-controls="productsPages">
         <i class="fas fa-fw fa-table"></i>
         <span>Products</span>
     </a>
-    <div id="productsPages" class="collapse" aria-labelledby="headingProducts" data-parent="#accordionSidebar">
+    <div id="productsPages" class="collapse show" aria-labelledby="headingProducts" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="products.html">All</a>
-            <a class="collapse-item" href="new-product.html">Add new</a>                       
+            <a class="collapse-item active" href="new-product.html">Add new</a>                       
         </div>
     </div>
 </li>
@@ -164,11 +159,9 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <!-- Sidebar Toggle (Topbar) -->
-                    <form class="form-inline">
-                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                    </form>
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
 
                     <!-- Topbar Search -->
                     <form
@@ -368,22 +361,36 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    
+
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Milestones</h1>
-                    <p class="mb-4">Administración de milestones</p>
-                            
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Milestones</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <label id="cuerpo"></label>
+                    <h1 class="h3 mb-4 text-gray-800">Add new product</h1>
+                    <form id="form-add-product">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">New product</h6>
+                            </div>
+                            <div class="card-body">
+                               
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Product name" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="textarea" class="form-control form-control-user" id="description" name="description" placeholder="Product description" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="code" name="code" placeholder="Product code" />
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" id="save-transaction" class="btn btn-primary">Save</button>
                             </div>
                         </div>
-                    </div>
+                       
+                     
+
+                    </form>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -412,65 +419,6 @@
         <i class="fas fa-angle-up"></i>
     </a>
 
-     <!-- Update Modal-->
-     <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-     <div class="modal-dialog" role="document">
-         <div class="modal-content">
-             <div class="modal-header">
-                 <h5 class="modal-title" id="exampleModalLabel">Update milestone</h5>
-                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                     <span aria-hidden="true">×</span>
-                 </button>
-             </div>
-             <div class="modal-body">
-                <form id="form-update-milestone">
-                            <div class="form-group" style="display:none;">
-                                <input type="text" class="form-control form-control-user" id="id" name="id" />
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Milestone name" />
-                            </div>
-                            <div class="form-group">
-                                Start: 
-                                <input type="datetime-local" class="form-control form-control-user" id="start" name="start" placeholder="Start" />
-                            </div>
-                            <div class="form-group">
-                                End: 
-                                <input type="datetime-local" class="form-control form-control-user" id="end" name="end" placeholder="End" />
-                            </div>
-                       
-                
-             </div>
-             <div class="modal-footer">
-                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                 <button type="submit" id="update-milestone" class="btn btn-primary">Update</button>
-                </form>
-             </div>
-         </div>
-     </div>
-   </div>
-
-      <!-- Delete Modal-->
-      <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Confirmación borrado</h5>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                  </button>
-              </div>
-              <div class="modal-body">¿Seguro que deseas borrar este milestone?</div>
-              <div class="modal-footer">
-                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                  <a class="btn btn-primary" onclick="borrar()">Borrar</a>
-              </div>
-          </div>
-      </div>
-    </div>
-
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -490,8 +438,6 @@
             </div>
         </div>
     </div>
-    <script src="js/axios.js"></script>
-     
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -503,12 +449,8 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="js/new-product.js"></script>
 
-   <!-- Page level custom scripts -->
-   <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 </html>
